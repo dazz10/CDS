@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#47535E</color>
+    <color name="colorPrimaryDark">#2F363F</color>
+    <color name="colorAccent">#FFF222</color>
+    <color name="colorBackground">#4C4B4B</color>
+    <color name="colorPanelLight">#DAE0E2</color>
+    <color name="colorPanelDark">#333945</color>
+    <color name="colorButtonLight">#EAF0F1</color>
+    <color name="colorButtonCancel">#FF362E</color>
+    <color name="colorButtonDark">#2F363F</color>
+    <color name="colorBlue">#3C40C6</color>
+    <color name="colorAmazon">#FF9900</color>
+</resources>

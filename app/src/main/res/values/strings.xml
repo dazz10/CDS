@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CDS</string>
+    <string name="compress">Compress Image</string>
+    <string name="zip">Create ZIP</string>
+    <string name="upload">Upload</string>
+    <string name="accept">I Accept</string>
+    <string name="user_agreement">This policy is user agreement based. The user agreement agrees to all the terms and condition.This
+    privacy policy adheres to all the terms and conditions. The policy helps user and company to make bounds to certain terms and condition.
+    This policy is user agreement based. The user agreement agrees to all the terms and condition. This privacy policy adheres to all the terms and conditions.his policy is user agreement based. The user agreement agrees to all the terms and condition. This
+    privacy policy adheres to all the terms and conditions.</string>
+    <string name="start">Start</string>
+    <string name="capture">Capture</string>
+</resources>
