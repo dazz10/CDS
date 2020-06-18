@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".MenuActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,10 +41,10 @@
                     android:layout_width="match_parent"
                     android:text="@string/accept"
                     android:background="@color/colorButtonLight"
-                    android:onClick="toMenu"
                     android:layout_marginHorizontal="15dp"
                     android:layout_marginBottom="20dp"
                     android:layout_height="50dp"
+                    android:onClick="toSign"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"

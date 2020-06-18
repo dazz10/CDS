@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".TransferActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginHorizontal="30dp"
+        android:background="@color/colorPanelDark"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/compress"
+            android:textColor="@color/colorButtonLight"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@color/colorBlue"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/zip"
+            android:textColor="@color/colorButtonLight"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@color/colorBlue"
+            />
+
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/upload"
+            android:textColor="@color/colorButtonLight"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@color/colorAmazon"
+            android:onClick="upload"
+            />
+
+        <LinearLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/colorButtonLight"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@color/colorPanelDark"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorButtonLight"
+                xmlns:tools="http://schemas.android.com/tools"
+                tools:text="20/30"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/percent_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorButtonLight"
+                tools:text="20/30"
+                android:textSize="14sp"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

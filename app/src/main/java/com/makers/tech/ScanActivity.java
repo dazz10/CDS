@@ -240,7 +240,7 @@ public class ScanActivity extends AppCompatActivity {
                     System.out.println("***Problem creating Image folder " +Path );
                 }
             }
-            final File file = new File(Path+"/" + "pic.jpg");
+            final File file = new File(Path+"/" + "images.jpg");
             ImageReader.OnImageAvailableListener readerListener = new ImageReader.OnImageAvailableListener() {
                 @Override
                 public void onImageAvailable(ImageReader reader) {

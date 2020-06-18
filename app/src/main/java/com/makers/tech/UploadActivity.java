@@ -2,12 +2,17 @@ package com.makers.tech;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.amazonaws.mobile.client.AWSMobileClient;
+import com.amazonaws.mobile.client.Callback;
+import com.amazonaws.mobile.client.UserStateDetails;
 
 public class UploadActivity extends AppCompatActivity {
 
@@ -24,10 +29,32 @@ public class UploadActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progress_horizontal);
         statusTextView = findViewById(R.id.status_text);
 
+
+
     }
 
     public void upload(View view) {
-        progress();
+        getApplicationContext().startService(new Intent(getApplicationContext(),UploadActivity.class));
+
+        AWSMobileClient.getInstance().initialize(getApplicationContext(), new Callback<UserStateDetails>() {
+            @Override
+            public void onResult(UserStateDetails result) {
+                StringBuilder sb = new StringBuilder();
+                sb.append(" ");
+                sb.append(result.getUserState());
+                Toast.makeText(getApplicationContext(),sb.toString(),Toast.LENGTH_SHORT).show();
+                uploadWithTransferUtility();
+            }
+
+            @Override
+            public void onError(Exception e) {
+
+            }
+        });
+
+    }
+
+    private void uploadWithTransferUtility() {
 
     }
 
